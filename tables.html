@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> <i>created tables </i></title>
+    <script>
+
+        let counter = 0;
+        function count() {
+            counter++;
+            if (counter % 10 == 0) {
+                alert('count is now ${counter}');
+            }
+            // alert(counter);
+        }
+
+        function hello() {
+            alert("Stay alert my friend...");
+            document.querySelector('h1').innerHTML = "Goodbye";
+        }
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector("button").onclick = count;
+        });
+    </script>
+</head>
+
+<body>
+    <h1>hallo</h1>
+    <div>
+        <button>Count</button>
+
+    </div>
+    <div>
+        <table border="2">
+            <tr>
+                <td>1st row, 1st column</td>
+                <td>1st row, second column</td>
+                <td>1st row, 3rd column</td>
+                <td>1st row, 4th column</td>
+            </tr>
+            <tr>
+                <td>2nd row, 1st column</td>
+                <td>2nd row, second column</td>
+                <td>2nd row, 3rd column</td>
+                <td>2nd row, 4th column</td>
+            </tr>
+            <tr>
+                <td>3rd row, 1st column</td>
+                <td>3rd row, second column</td>
+                <td>3rd row, 3rd column</td>
+                <td>3rd row, 4th column</td>
+                <td colspan="3">spanned 3 cells</td>
+            </tr>
+
+        </table>
+    </div>
+    <br>
+    <div id="a form">
+        <form action="www.google.com" method="GET" id="google_search">
+            <input type="text" name="gogle search" id="google search" placeholder="search me" required>
+            <input type="submit" value="search" id="search">
+        </form>
+    </div>
+</body>
+
+</html>

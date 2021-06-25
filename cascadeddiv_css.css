@@ -1,0 +1,39 @@
+@font-face {
+    font-family: ‘DroidSerifItalic’;
+    src: url(‘DroidSerif-Italic-webfont.eot’);
+    src: url(‘DroidSerif-Italic-webfont.eot?#iefix’)
+    format(‘embedded-opentype’),
+    url(‘DroidSerif-Italic-webfont.woff’) format(‘woff’),
+    url(‘DroidSerif-Italic-webfont.ttf’) format(‘truetype’),
+    url(‘DroidSerif-Italic-webfont.svg#DroidSerifItalic’)
+    format(‘svg’);
+    font-weight: normal;
+    font-style: normal;
+    }
+
+p{
+    font-family: DroidSerifItalic;
+    color: blueviolet;
+    position: center;
+
+}
+
+#outer_div{
+    background-color: aquamarine;
+    border: 2px solid;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 15px;
+}
+#inner_div{
+    position: relative;
+    top: 10px;
+    /* background-color: black; */
+    background-color: rgba(22, 4, 4, 0.507);
+    border: 2px solid;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+
