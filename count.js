@@ -15,6 +15,6 @@ function hello() {
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("button").onclick = count;
 
-//run after some interval
+//run after some interval. eg every 100ms or 1sec
 setInterval(counter, 1000);
 });
