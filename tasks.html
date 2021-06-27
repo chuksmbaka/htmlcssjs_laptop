@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tasks</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("form").onsubmit = () => {
+                const task = document.querySelector("#task").value;
+                console.log(task);
+
+                //To create a new element in the document. inside <ul> are <li> items. so we create <li> elements
+               const li =  document.createElement( "li");
+                 //create a new list item inside 
+                 li.innerHTML = task;
+
+                 document.querySelector("#tasks").append(li);
+
+                //stop form from submitting
+                return false;
+            }
+        })
+    </script>
+</head>
+
+
+<body>
+    <h1>Tasks</h1>
+    <ul id="tasks">
+
+    </ul>
+
+    <form>
+        <input type="text" name="" id="task" placeholder="New Task">
+        <input type="submit">
+    </form>
+</body>
+
+</html>

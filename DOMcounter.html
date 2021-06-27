@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <title>counter</title>
+    <script>
+        let counter = 0;
+        function count() {
+            let heading = document.querySelector("h1");
+            heading.innerHTML = counter++;
+            if (counter == 10) {
+                counter = 0;
+                alert(`count is now ${counter}`);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>0</h1>
+    <button onclick="count()">click here</button>
+</body>
+
+</html>

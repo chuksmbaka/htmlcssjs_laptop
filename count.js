@@ -14,4 +14,7 @@ function hello() {
 }
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("button").onclick = count;
+
+//run after some interval
+setInterval(counter, 1000);
 });
